@@ -73,6 +73,8 @@ INSERT INTO Matches VALUES
 Select player_name, country
 from Players;
 
+SET SQL_SAFE_UPDATES = 0;
+
 Update players
 set bowling_style = "Left-arm medium fast"
 where player_name = "Joe Root";
